@@ -1,0 +1,116 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-main:'Roboto', sans-serif;
+    --font-title: 2.2rem;
+}
+
+.main{
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.select__title{
+    font-family: var(--font-main);
+    font-size: var(--font-title);
+}
+
+.selects{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.select-container-standard{
+    width: 190px;
+    height: 35px;
+    position: relative;
+   
+}
+
+.select-container-standard__frame{
+    text-decoration: none;
+    height: 35px;
+    width: 100%;
+    display: block;
+    line-height: 2rem;
+    background-color: rgb(114, 163, 16);
+    color: #FFF;
+    border: 1px solid rgb(114, 163, 16);
+    text-align: left;
+    padding: 0px 0.6rem;
+    font-family: var(--font-main);
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.select-container-standard__options{
+    padding: 0px;
+    border: 1px solid rgb(114, 163, 16);
+    color: rgb(114, 163, 16);
+    position: absolute ;
+    width: 100%;
+    top: 35px;
+    display: none;
+}
+
+
+.option{
+    width: 100%;
+    height: 35px;
+    display: block;
+    line-height:2rem;
+    text-align: left;
+    padding: 0px 0.6rem;
+    cursor: pointer;
+    font-family: var(--font-main);
+    font-weight: 600;
+}
+
+.option:hover{
+    background-color: rgb(114, 163, 16);
+    color: #FFF;
+}
+.bx{
+    transition: 0.4s;
+}
+.rotate-arrow{
+    transition: 0.4s;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.select-animations{
+    height: 177px;
+    overflow: hidden;
+    position: relative;
+}
+
+#select-animations + .select-container-standard__options{
+    position: absolute;
+    top: -80%;
+    display: block;
+}
+
+.show-options{
+    display: block;
+}
+
+

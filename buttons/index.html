@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Components Buttons</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    
+    <main class="buttons">
+
+        <div class="container container-stantard">
+            <h3 class="buttons__title">Botones estandar</h3>
+            <section class="buttons-container">
+                <button class="btn buttons-container__standard buttons-container__standard--normal">Normal</button>
+                <button class="btn buttons-container__standard buttons-container__standard--small">Small</button>
+                <button class="btn buttons-container__standard buttons-container__standard--large">Large</button>
+                <button  class="btn buttons-container__standard buttons-container__standard--outline">Outline</button>
+                <button class="btn buttons-container__standard buttons-container__standard--disabled">Disabled</button>     
+            </section>
+    
+            <div class="config-color">
+                <div class="config-color-container">
+                    <label class="config-color__label " for="color-button">Color botón</label>
+                    <input class="config-color__input config-standard-background" type="color" value="#363aa9">
+                </div>
+              
+                <div class="config-color-container">
+                    <label class="config-color__label " for="color-button">Color texto</label>
+                    <input class="config-color__input config-standard-color" type="color" value="#FFFFFF">
+                </div>
+               
+            </div>
+            
+        </div>
+
+        <div class="container container-with-icon">
+            <h3 class="buttons__title">Botones con icono</h3>
+            <section class="buttons-container">
+                <div class="btn button-icon__container buttons-container__icon--normal">
+                    <i class='bx bxs-user-circle button-icon__icono'></i>
+                    <div> Normal</div>
+                </div> 
+
+                <div class="btn button-icon__container buttons-container__icon--small">
+                    <i class='bx bxs-x-circle button-icon__icono--small'></i>
+                    <div> Small</div>
+                </div> 
+
+
+                <div class="btn button-icon__container buttons-container__icon--large">
+                    <i class='bx bxs-check-circle button-icon__icono--large'></i>
+                    <div> Large</div>
+                </div> 
+
+
+
+                <div class="btn button-icon__container buttons-container__icon--outline ">
+                    <i class='bx bxs-plus-circle button-icon__icono'></i>
+                    <div> Outline</div>
+                </div> 
+
+
+                <div class="btn button-icon__container button-icon__container--disabled buttons-container__standard--disabled">
+                    <i class='bx bxs-info-circle button-icon__icono'></i>
+                    <div> Disabled</div>
+                </div> 
+            </section>
+        </div>
+
+
+        
+        <div class="container container-with-animations">
+            <h3 class="buttons__title">Botones con animaciones</h3>
+            <h5 class="buttons__subtititle">Botones con animación slide</h5>
+            <section class="buttons-container buttons-animations-slide">
+                
+                <div class="btn-animations buttons-animations-slide-lr">
+                    <div class="slide buttons-animations-slide-lr__slide"></div>
+                    <div class="buttons-animations-slide__text"> Left - Right</div>
+                </div> 
+                  
+                <div class="btn-animations buttons-animations-slide-rl">
+                    <div class="slide buttons-animations-slide-rl__slide"></div>
+                    <div class="buttons-animations-slide__text"> Right - Left</div>
+                </div>
+                  
+                <div class="btn-animations buttons-animations-slide-tb">
+                    <div class="slide buttons-animations-slide-tb__slide"></div>
+                    <div class="buttons-animations-slide__text"> Top - Bottom</div>
+                </div> 
+
+                <div class="btn-animations buttons-animations-slide-bt">
+                    <div class="slide buttons-animations-slide-bt__slide"></div>
+                    <div class="buttons-animations-slide__text"> Bottom - Top</div>
+                </div> 
+                
+                <div class="btn-animations buttons-animations-slide-dia">
+                    <div class="slide buttons-animations-slide-dia__slide"></div>
+                    <div class="buttons-animations-slide__text"> Diagonal</div>
+                </div> 
+                
+                <div class="btn-animations buttons-animations-slide-circle">
+                    <div class="slide buttons-animations-slide-circle__slide"></div>
+                    <div class="buttons-animations-slide__text"> Circle</div>
+                </div> 
+                
+                <div class="btn-animations buttons-animations-slide-rrllx">
+                    <div class="slide buttons-animations-slide-rrllx__slide"></div>
+                    <div class="buttons-animations-slide__text"> Curtain X</div>
+                </div> 
+
+                <div class="btn-animations buttons-animations-slide-rrlly">
+                    <div class="slide buttons-animations-slide-rrlly__slide"></div>
+                    <div class="buttons-animations-slide__text"> Curtain Y</div>
+                </div> 
+                
+                
+                
+            
+            </section>
+        </div>
+    
+    
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
